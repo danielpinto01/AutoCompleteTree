@@ -25,7 +25,7 @@ public class MainWindow extends JFrame{
 		setLayout(new BorderLayout());
 
 		init();
-		
+
 		setVisible(true);
 	}
 
@@ -33,7 +33,7 @@ public class MainWindow extends JFrame{
 		jTextField = new JTextField(15);
 		jTextField.setBorder(BorderFactory.createTitledBorder("Word"));
 		add(jTextField, BorderLayout.NORTH);
-		
+
 		btnAddWord = new JButton("Add");
 		add(btnAddWord, BorderLayout.SOUTH);
 	}
