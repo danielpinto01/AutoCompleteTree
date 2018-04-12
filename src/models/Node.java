@@ -11,6 +11,10 @@ public class Node {
 		this.information = information;
 		nodes = new ArrayList<>();
 	}
+	
+	public void addNode(Node actual) {
+		nodes.add(actual);
+	}
 
 	public String getInformation() {
 		return information;
@@ -30,6 +34,6 @@ public class Node {
 
 	@Override
 	public String toString() {
-		return "Node [information=" + information + ", nodes=" + nodes + "]";
+		return information;
 	}
 }
