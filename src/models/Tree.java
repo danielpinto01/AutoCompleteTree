@@ -14,13 +14,15 @@ public class Tree {
 				Node newNode = new Node(word.substring(0,1));
 				actual.addNode(newNode);
 				addToTree(word.substring(1, word.length()), newNode);
-				System.out.println(newNode.getInformation());
+//				System.out.println(newNode.getInformation());
 			}else {
-				addToTree(word.substring(1,word.length()), actual.getWord(word.substring(0,1)));
+				Node aux =  actual.getWord(word.substring(0,1));
+				aux.setUtilityLetter();
+				addToTree(word.substring(1,word.length()), aux);
 			}
 		}
 	}
-	
+
 	public Node getRootTree() {
 		return rootTree;
 	}

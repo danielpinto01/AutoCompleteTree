@@ -21,7 +21,6 @@ public class Controller implements ActionListener {
 		switch (Events.valueOf(e.getActionCommand())) {
 		case ADD_WORD:
 			tree.addToTree(mainWindow.getTextWord(), tree.getRootTree());
-			System.out.println("Hola");
 			break;
 		}
 		mainWindow.paintTree(tree.getRootTree());

@@ -15,7 +15,6 @@ public class Node {
 	}
 	
 	public void addNode(Node actual) {
-//		utilityLetter++;
 		nodes.add(actual);
 //		System.out.println(utilityLetter);
 	}
@@ -54,8 +53,12 @@ public class Node {
 		return null;
 	}
 
+	public void setUtilityLetter() {
+		utilityLetter++;
+	}
+
 	@Override
 	public String toString() {
-		return information;
+		return information + "-" + utilityLetter;
 	}
 }
